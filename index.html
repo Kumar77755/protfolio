@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mr.X</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS (reveal) and Lottie player -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fixed header -->
+  <header class="header">
+    <div class="container header-row">
+      <div class="logo">MR.X</div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+  </header>
+
+  <!-- Main: scroll-snap container -->
+  <main class="snap-container">
+
+    <!-- HOME (dark navy) -->
+<section id="home" class="panel panel-home" data-bg>
+  <div class="container panel-inner">
+    <div class="hero-left" data-aos="fade-right">
+      <h1 class="hero-title">Hi — I’m <span class="accent">Mr.X</span></h1>
+      <p class="hero-sub">Web Developer • Data Analyst — IMIT, Cuttack</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn">See Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
+    </div>
+    
+    <div class="profile-photo" data-aos="fade-up">
+      <img src="1732540677744.jpg" alt="Mr.X Photo">
+    </div>
+    <!-- Glass card with working Lottie -->
+
+
+    <div class="glass-card">
+      <lottie-player 
+        src="https://assets10.lottiefiles.com/packages/lf20_qp1q7mct.json"
+        background="transparent" speed="1"
+        style="width:220px;height:220px;" loop autoplay>
+      </lottie-player>
+      <h4>Data</h4>
+      <p>Python · Pandas · Visualization</p>
+    </div>
+  </div>
+</section>
+
+
+        
+          
+
+    <!-- ABOUT (teal cyan) -->
+    <section id="about" class="panel panel-about">
+      <div class="container panel-inner content-grid">
+        <div class="about-card" data-aos="fade-up">
+          <h2>About Me</h2>
+          <p>
+            I’m Deepak (MR.X), a Computer Science student at IMIT, Cuttack. I build modern,
+            responsive websites and analyze data to extract meaningful insights. I enjoy working
+            across frontend and data stacks to create useful, user-centered solutions.
+          </p>
+
+          <ul class="skill-list">
+            <li>HTML · CSS · JavaScript</li>
+            <li>Python · Pandas · NumPy</li>
+            <li>SQL · Power BI · Excel</li>
+          </ul>
+        </div>
+
+        <div class="about-lottie" data-aos="zoom-in">
+          <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_49rdyysj.json"
+            background="transparent" speed="1" style="width:320px;height:320px;" loop autoplay>
+          </lottie-player>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS / PROJECTS (amber) -->
+    <section id="skills" class="panel panel-skills">
+      <div class="container panel-inner">
+        <h2 class="section-title" data-aos="fade-up">Projects & Skills</h2>
+
+        <div class="projects-grid" data-aos="fade-up" data-aos-delay="120">
+          <article class="project-card">
+            <div class="project-top">
+              <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_4kx2q32n.json"
+                background="transparent" speed="1" style="width:140px;height:140px;" loop autoplay>
+              </lottie-player>
+            </div>
+            <h3>Portfolio Website</h3>
+            <p>Single-page responsive site with animations and smooth UX.</p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_pwohahvd.json"
+                background="transparent" speed="1" style="width:140px;height:140px;" loop autoplay>
+              </lottie-player>
+            </div>
+            <h3>Data Dashboard</h3>
+            <p>Sales analysis and interactive dashboards using Python and Power BI.</p>
+          </article>
+
+        </div>
+
+        <!-- skill bars -->
+        <div class="skill-bars" data-aos="fade-up" data-aos-delay="220">
+          <div class="bar">
+            <label>HTML / CSS</label>
+            <div class="track"><div class="fill" style="--w:92%"></div></div>
+          </div>
+          <div class="bar">
+            <label>JavaScript</label>
+            <div class="track"><div class="fill" style="--w:78%"></div></div>
+          </div>
+          <div class="bar">
+            <label>Python / Data</label>
+            <div class="track"><div class="fill" style="--w:85%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (darker navy) -->
+    <section id="contact" class="panel panel-contact">
+      <div class="container panel-inner content-grid">
+        <div class="contact-card" data-aos="fade-right">
+          <h2>Contact</h2>
+          <p>If you'd like to collaborate or have a project idea, drop a message.</p>
+          <p><strong>Email:</strong> polaideepakkumar971@gmail.com</p>
+          <p><strong>Location:</strong> IMIT, Cuttack, India</p>
+          <div class="socials">
+            <!-- placeholders, add actual URLs if you want later -->
+            <a href="https://www.linkedin.com/in/deepak-kumar-polai-6b55042a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="soft-btn">LinkedIn</a>
+            <a href="#" class="soft-btn">GitHub</a>
+            <a href="https://www.facebook.com/deepakkumar.polai.3344" class="soft-btn">facebook</a>
+            <a href="https://www.instagram.com/ds.shiv1/#" class="soft-btn">instagram</a>
+          </div>
+        </div>
+
+        <div class="contact-lottie" data-aos="fade-left">
+          <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_jcikwtux.json"
+            background="transparent" speed="1" style="width:320px;height:320px;" loop autoplay>
+          </lottie-player>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© 2025 Mr.X • Built with ❤️ • IMIT, Cuttack</small>
+    </div>
+  </footer>
+
+  <!-- AOS + main script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
